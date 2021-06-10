@@ -1,0 +1,30 @@
+JIRA POCS:
+1)Create attlasian account
+2)Create Jira Project		
+3)Create Backlog		
+4)Create Sprint			
+5)Create Task			
+6)Create sub task	
+7)Jira worlflows		
+8)Expolre Jira UI		
+9)Issues Types (Epics vs Story vs Task vs Subtask vs Bug)
+10) Integrate GitHub/bB with Jira
+11) Issue Branch  with Ticket ID
+12) Create branch and pull request from jira and show commits in jira.
+13) Jira+ GB+conflu 
+14)Generate JIRA query
+15)Project types in Jira and explore within them
+16)Show sonarqube report in jira
+17)Add one more in jira poc that is difference between classic project and NextGen project
+
+-----------------------------Confluence pocs------------------------------------
+
+Confluence POCS:
+1) Create space with blank page and add table , contents, links, images, etc.
+2) add Jira issues and tasks in confluence
+3) create new task, epic,etc. in jira from confluence.
+4) How to give permission to users and groups?
+5) Create reports of jira issues and tasks in confluence.
+6) How to give permission to users and groups?
+7) Create reports of jira issues and tasks in confluence.
+
