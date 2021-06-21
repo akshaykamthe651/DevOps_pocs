@@ -1,0 +1,22 @@
+GIT POC:
+1) Explore .git Folder and prepare documentation about it.
+2)Merge with fast forward and without fast forward and also use rebase for merging as told during session.
+3)difference between rebase and interactive rebase.
+4) difference between delta storage and snapshot storage.
+5)Explore git commands : 
+
+	cherry pick 
+	rebase 
+	log 
+
+	graph
+	reset
+	revert 
+--> do make use of it and show demo on how these commands work.
+6) Read Pre commit and Post Commit and explain in detail as well do a POC using your use case.
+7) Git stash command  (POC for different timing of git push and pull)   
+8) git fetch vs git pull vs git push
+9)Read Git workflows in detail.
+10)Check if rebase creates new commit Id or not. And if no then why and yes then why and how?
+
+
