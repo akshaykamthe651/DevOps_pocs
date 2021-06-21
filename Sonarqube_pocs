@@ -1,0 +1,19 @@
+SonarQube POCS:
+1	Sonar qube theory (Bug , vulnerability , code smells,Quality profile , Quality Gate ,Databases provided)									
+2	Read about Sonar Lint , 7 axes and pain areas									
+3	Sonar scanner and sonar scanner properties file									
+4	 Sonar qube architecture									
+5	Security hotspots and its lifecycle									
+6	Issue severity and its types									
+7	Two projects with same name but different project keys									
+8	measures  , period value , comparison operator , error value , warn value									
+9	Two Quality Gate profile for same project									
+10	Generate code coverage report of application using jacoco and cobertura									
+11	Overall Leak period in sonar 									
+12	Integrating sonarqube with database
+13	Use sonarqube and sonarscanner as dependency and as well as installation for maven project with properties file and without properties file	
+14	Difference between Sonarqube 7.5 and Sonarqube 8.1				
+15  Install Both versions of sonarqube on windows and as well as EC2
+
+			
+
