@@ -1,0 +1,57 @@
+Sr. No	POC	Description
+1	User related - Job Related POC	Create 5 users
+2		Create 5 jobs
+3		User can not create job
+4		user can not run a job
+5	Group Related POC	Create 3 groups(Dev/test/production)
+6		Give different access of each group
+7		Which access overrite what  access?
+8		Role based and Groupbased(Theory)?
+9	Job Related POC	create freestyle project(ssh command)
+10		pretrigger
+11		post trigger
+		
+12	Maven Job(Using Maven Project)	Clone project from git and do maven commands
+13		Install jacoco plugin/html file redirect
+14		Install Cobertura Plugin
+15		Build Periodically and post/prebuild
+		
+16	Maven Job(Using Free Style Project)	Clone project from git and do maven commands
+17		Install jacoco plugin/html redirect
+18		Install Cobertura Plugin
+19		Build Periodically and post/prebuild
+20		Email or slack
+21	SonarQube and jira	Soanrqube-with-jenkins
+22		On pullrequest jenkins job should get tgriggered
+23		jira-git-jenkins-jira
+24		
+		
+25	plugin	Install plug in without dashboard
+		
+		
+26	sonar-scanner	sonar-scanner connection
+27		job should fail when qualityu gate is falied
+28		Email or slack
+29	Poll scm	Without using console
+30		when commit is done, job should triggered
+31		paramaterized
+32		webhooks
+33	Master Slave	create master slave
+34		2 slaves - job should run only on 1 slave
+35		2 slaves-  after execution target folder is created on master or slave
+36		how many jobs run parallely?
+		
+37	Others	JNLP
+38		Bydefault env variable
+39		create evn variable
+40		check all 5 projects(e.g freestyle,maven)
+41		check /var/lib/lenkins
+42		Job gets triggered when url is hit
+43		Volume mount Slave as docker container
+44		Jar should deploy on the specific server as branch specified (dev/test/prod)
+45		Push jar on S3
+		
+46	Jenkins File	Descriptive and scripted jenkins file (Theory)
+47		Build test and deploy using approvals in bothtype of jenkins file
+48		Main job triggers job1 and job2 to run parallely and sequentially as well
+49		Multibranch pipeline for github and bitbucket (Theory)
