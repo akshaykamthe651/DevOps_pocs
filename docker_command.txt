@@ -1,0 +1,44 @@
+Docker instalation(google cloud platform)
+
+sudo apt install docker.io
+docker version
+docker images
+docker pull nginx
+docker run -d nginx
+docker ps
+
+docker run -d -p 8000:80 nginx  //to map docker port to image port
+ls
+cd machineinfo
+
+cat requirements.txt
+vi requirements.txt
+cd templates
+
+vi dockerfile //check info or image
+
+docker built -t repositoryname/dockerfilename .   //to push image from repository to inside container
+ //6 steps get executed and created  imageid
+ 
+ //go inside container
+ docker exec it dockerid /bin/bash
+ 
+ # docker login 		//login succeed
+ 
+ //push to dockerhub
+ 
+ docker push id/name
+ 
+ //to stop container 
+	docker stop container id
+	docker ps -a
+	
+	//this command removes stopped/dangling images /not used
+	docker system prune
+	
+	
+	**************
+	1.create docker file
+	2.build file
+	3.test image
+	4.push image to docker hub
