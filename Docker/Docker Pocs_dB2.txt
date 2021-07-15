@@ -446,9 +446,132 @@ on ubuntu:
 		open project,
 		add service with api service address of unix socket http://3.12.234.56:2375/images/json
 		run docker-compose file
+		------------------------------updated from deepika---------------
 		
+		 How to install docker daemon and docker cli in defferent servers
+
+===============================================
+common steps for docker daemon and docker CLI
+===============================================
+
+1)   First, update your existing list of packages:
+   
+      $  sudo apt update
+
+2)   Next, install a few prerequisite packages which let apt use packages over HTTPS:
+
+
+      $  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+3)   Then add the GPG key for the official Docker repository to your system:
+
+
+      $  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+4) Add the Docker repository to APT sources:
+
+
+    $  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+
+5)  Next, update the package database with the Docker packages from the newly added repo:
+
+  
+     $   sudo apt update
+
+6)  Make sure you are about to install from the Docker repo instead of the default Ubuntu repo:
+
+
+    $    apt-cache policy docker-ce
+
+7)Finally, install Docker:
+
+
+     $   sudo apt install docker-ce
+
+
+//*  =========  common steps for cli and daemon over===========* //
+
+
+
+
+in docker cli server execute below steps
+================================================
+
+
+    $    sudo apt install docker-ce-cli
+
+
+
+in docker daemon server execute below steps
+===============================================
+
+
+
+1)  Create the directory to store the configuration file.
+
+
+       $    sudo mkdir -p /etc/systemd/system/docker.service.d
+
+2)   Create a new file to store the daemon options.
+
+
+        $     sudo vi /etc/systemd/system/docker.service.d/options.conf
+
+
+3)   Now make it look like this and save the file when you’re done: 
+  
+       $ [Service]
+         ExecStart=
+         ExecStart=/usr/bin/dockerd -H unix:// -H tcp://0.0.0.0:2375
+
+
+4)   Now, reload the systemd daemon and restart the docker service:
+
+
+       $    Reload the systemd daemon.
+             
+       $     sudo systemctl daemon-reload
+
+
+
+5)   # Restart Docker.
+
+
+       sudo systemctl restart docker
+
+That’s going to let you continue to connect to the Docker daemon from within the VM thanks to
+ -H unix://, but it also exposes the Docker Daemon with -H tcp://0.0.0.0:2375 so that anyone 
+can connect to it over the non-encrypted port.
+
+
+  execute below steps in docker cli
+=======================================
+
+
+Configuring your dev box to connect to the remote Docker daemon:
+
+
+If you want to set DOCKER_HOST by default so it always connects remotely 
+
+you can export it in your ~/.bashrc file. Here’s an example of that as a 1 liner:
+
+1) $ echo "export DOCKER_HOST=tcp://docker daemon IP:2375" >> /.bashrc && source /.bashrc
+
+
+That just adds the export line to your .bashrc file so it’s available every time you open your terminal. 
+
+The source command reloads your bash configuration so it takes effect now.
+
+
+testing the connectivity b/w docker daemon and cli which are there in defferen servers
+========================================================================================
+
+
+
+2)  $    curl <docker daemon ip>:2375/v1.38/containers/json 
+
 		
-		
+-------------------------------------------------------------------------------------------------------------------------------------------		
 
 6. How to override CMD command  (https://www.youtube.com/watch?v=SdfIQBqQ5t4)
 			CMD commnd in Dockerfile simply implement argument as following ex.
