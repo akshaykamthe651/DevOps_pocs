@@ -439,7 +439,7 @@ on ubuntu:
 
 		4.1 pull mysql image & create directory on machine  /home/akshay/pocs  to store  container data from  var/lib/mysql
 		
-		sudo docker run -dp 3306:3306 --name mysql -v /home/akshay/pocs:var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=employee_db mysql:5.7
+		sudo docker run -dp 3306:3306 --name mysql -v /home/akshay/pocs:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=employee_db mysql:5.7
 		
 		4.2 run image in interactve mode -create database,table,insert record
 		
@@ -449,13 +449,10 @@ on ubuntu:
 					show databases;
 					use databasenam;
 					
-					CREATE TABLE employee (
-						id int(255),
-						name varchar(255), 
-					);
+					CREATE TABLE employee (id int(255),name varchar(255));
 
-					INSERT INTO table_name VALUES (value1, value2, value3, ...);
-					SELECT * FROM tablename;
+					INSERT INTO employee VALUES (1,"akshay");
+					SELECT * FROM employee;
 				
 					exit
 					exit
