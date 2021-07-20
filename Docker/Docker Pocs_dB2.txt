@@ -473,12 +473,6 @@ on ubuntu:
 					show databases;
 					use databasenam;
 					
-					CREATE TABLE employee (
-						id int(255),
-						name varchar(255), 
-					);
-
-					INSERT INTO table_name VALUES (value1, value2, value3, ...);
 					SELECT * FROM tablename;
 --------------------------------------------------------------------------------------------------------------------------------
 
