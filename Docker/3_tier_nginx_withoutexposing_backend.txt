@@ -21,7 +21,7 @@ docker --version
 	
 // ON WORKERNODE -1 (spring app in src)
 		//clone code 
-			git clone https://github.com/laxapatiakshaylearning/ashlesh
+			git clone https://github.com/akshaykamthe651/Demo.git
 		
 		//add Dockerfile
 		
@@ -78,7 +78,7 @@ docker --version
 ////////////////////now go to frontend workernode-2 /////////////////
 		
 		//clone repo 
-			git clone https://github.com/laxapatiakshaylearning/ashlesh
+			git clone https://github.com/akshaykamthe651/Demo.git
 			
 		//go to app create default.conf file
 		
