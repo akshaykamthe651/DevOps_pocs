@@ -1,0 +1,26 @@
+Below are the Stages that are required for the CI pipeline 
+
+1. master slave architecture ( using jnlp protocol)
+
+
+2. Make sure that the job is running on slave
+
+
+3. Integration of github with jenkins & the commit id from github must be displayed on Jenkins & configure webhook
+
+
+4. Generate code coverage report using cobertura plugin
+
+
+5. Integrate sonarqube with jenkins
+
+
+6. Create customize gate for sonarqube & if make sure if the quality gate fails the job should not trigger
+
+
+7. build docker image
+
+
+8. push the docker image to docker hub
+
+------------------------------------------------------------------------------------------------------------------------
